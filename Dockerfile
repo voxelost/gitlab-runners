@@ -1,0 +1,7 @@
+ARG GITLAB_RUNNER_IMAGE_TYPE=gitlab-runner
+ARG GITLAB_RUNNER_IMAGE_TAG=latest
+
+FROM gitlab/${GITLAB_RUNNER_IMAGE_TYPE}:${GITLAB_RUNNER_IMAGE_TAG}
+
+RUN apt-get update
+RUN apt-get -y upgrade
