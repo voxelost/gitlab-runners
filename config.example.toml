@@ -1,0 +1,8 @@
+concurrent = 100
+check_interval = 0
+log_level = "info"
+
+[session_server]
+  listen_address = "0.0.0.0:8093"
+  advertise_address = "0.0.0.0:8093"
+  session_timeout = 1800
