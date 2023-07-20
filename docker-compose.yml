@@ -12,5 +12,5 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock # for Docker in Docker containers
     
     ports:
-      - ${RUNNERS_SERVICE_PORT}:8093
+      - ${GITLAB_RUNNERS_SERVICE_PORT}:8093
 
