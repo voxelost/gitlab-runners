@@ -8,7 +8,7 @@ services:
     env_file:
       - .env
     volumes:
-      - ${GITLAB_RUNNER_CONFIG_DIR}:/etc/gitlab-runner
+      - ${GITLAB_RUNNERS_CONFIG_DIR}:/etc/gitlab-runner
       - /var/run/docker.sock:/var/run/docker.sock # for Docker in Docker containers
     
     ports:
